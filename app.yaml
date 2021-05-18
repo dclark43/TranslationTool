@@ -1,0 +1,23 @@
+# Use the PHP 7.3 runtime by replacing "php72" below with "php73"
+runtime: php73
+
+# Defaults to "serve index.php" 
+entrypoint: serve router.php
+
+
+# If your main page is index.php, comment the above entrypoint setting
+
+handlers:
+- url: /(.+\.(mp3|png|jpg))$
+  static_files: \1
+  upload: .+\.(mp3|png|jpg)$
+
+- url: /styles
+  static_dir: styles
+
+- url: /uploads
+  static_dir: uploads
+
+# # Serve php scripts.
+# - url: /(.+\.php)$
+#   script: auto

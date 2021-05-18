@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #D3D3D3;
+	font-family: Candara;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.col-1 { min-width: 8.33%; }
+.col-2 { min-width: 16.67%; }
+.col-3 { min-width: 25%; }
+.col-4 { min-width: 33.33%; }
+.col-5 { min-width: 41.67%; }
+.col-6 { min-width: 50%; }
+.col-7 { min-width: 58.33%; }
+.col-8 { min-width: 66.67%; }
+.col-9 { min-width: 75%; }
+.col-10 { min-width: 83.33%; }
+.col-11 { min-width: 91.67%; }
+.col-12 { min-width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.title {
+	margin: 20px auto 20px 8.33%;
+	font-weight: bold;
+}
+
+.container {
+	display: block;
+	margin: auto 8.33% auto 8.33%;
+	padding: 20px;
+	max-width: 83.33%;
+	border: 2px solid black;
+	background-color: white;
+}
+
+.filter-container {
+	margin: auto 8.33% 20px 8.33%;
+	padding: 20px auto 20px;
+	max-width: 83.33%;
+	border: 2px solid black;
+	background-color: white;
+}
+
+table {
+	vertical-align: middle;
+}
+
+td.header {
+	font-size: 18px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+td.english {
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+td.translation {
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+td.action {
+	white-space: nowrap;
+	vertical-align: middle;
+	padding: 0px 5px 0px 5px;
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 36px;
+	padding: 10px;
+}
+
+h3 {
+	font-size: 20px;
+	padding: 10px;
+}
+
+h5 {
+	font-size: 16px;
+	padding: 10px;
+}
+
+label {
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+input {
+	font-size: 24px;
+}
+
+.btn-secondary {
+	margin: 7px 8.33% 7px auto;
+	float: right;
+	font-size: 24px;
+	background-color: #404040;
+	cursor: pointer;
+}
+
+button.btn-action {
+	background-color: white;
+	border-color: white;
+	border: none;
+	display:inline;
+}
+
+button.btn-action:hover {
+	color: #7E7E7E;
+}
+
+.form-control:focus {
+	border-color: #D3D3D3;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(64, 64, 64, 0.6);
+}
+
+.answer {
+	margin: 10px 5% 10px 5%;
+}
+
+.dropdown-item {
+	padding: 10px;
+}
+
+.submit {
+	margin: 20px 3% 20px 30%;
+	vertical-align: middle;
+}
+
+.cancel {
+	margin: 20px 30% 20px 3%;
+	vertical-align: middle;
+}
+
+.removable {
+	width: 95%;
+	display: inline;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.remove-button {
+	width: 3%;
+	display: inline;
+	vertical-align: middle;
+}
+
+rect.btn {
+	stroke:#fff;
+	fill:#fff;
+	fill-opacity:0;
+	stroke-opacity:0
+}
+
+.credits-div {
+	text-align: right;
+	width: 800px;
+	height: 0px;
+	margin-left: 25%;
+}
+
+.credits-content {
+	font-size: 20px;
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
